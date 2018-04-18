@@ -81,7 +81,7 @@ class UsersController extends Controller
       return view('users.edit', compact('user'));
     }
 
-    public function update(User $users, Request $request)
+    public function update(User $user, Request $request)
     {
       $this->validate($request, [
         'name' => 'required|max:50',
